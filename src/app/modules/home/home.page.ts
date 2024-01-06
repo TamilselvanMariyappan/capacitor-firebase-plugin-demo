@@ -40,6 +40,10 @@ export class HomePage {
       name: 'Firebase Storage',
       url: '/firebase-storage',
     },
+    {
+      name: 'Firebase Login',
+      url: '/firebase-login',
+    }
   ];
 
   constructor() {}

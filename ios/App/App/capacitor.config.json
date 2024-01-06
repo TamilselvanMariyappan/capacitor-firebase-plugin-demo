@@ -1,9 +1,46 @@
 {
-	"appId": "dev.robingenz.capacitorjs.demo.firebaseplugins",
-	"appName": "capacitor-firebase-plugin-demo",
-	"bundledWebRuntime": false,
-	"npmClient": "npm",
+	"appId": "net.xxx.xxx",
+	"appName": "Landry's Select Club",
 	"webDir": "www",
-	"plugins": {},
-	"cordova": {}
+	"bundledWebRuntime": false,
+	"plugins": {
+		"GoogleAuth": {
+			"scopes": [
+				"profile",
+				"email"
+			],
+			"serverClientId": "851915.apps.googleusercontent.com",
+			"forceCodeForRefreshToken": true
+		},
+		"PushNotifications": {
+			"presentationOptions": [
+				"badge",
+				"sound"
+			]
+		},
+		"SplashScreen": {
+			"launchAutoHide": false,
+			"androidSplashResourceName": "splash",
+			"androidScaleType": "CENTER_CROP",
+			"showSpinner": false,
+			"androidSpinnerStyle": "inverse",
+			"iosSpinnerStyle": "small",
+			"spinnerColor": "#ffffff",
+			"splashFullScreen": true,
+			"splashImmersive": true,
+			"useDialog": false
+		},
+		"FirebaseAuthentication": {
+			"skipNativeAuth": false,
+			"providers": [
+				"google.com",
+				"microsoft.com"
+			]
+		}
+	},
+	"server": {
+		"hostname": "lscconsumer",
+		"iosScheme": "http",
+		"androidScheme": "https"
+	}
 }

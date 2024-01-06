@@ -1,9 +1,14 @@
 {
-  "appId": "dev.robingenz.capacitorjs.demo.firebaseplugins",
+  "appId": "net.xxx.xxx",
   "appName": "capacitor-firebase-plugin-demo",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
-  "plugins": {},
+    "plugins": {
+      "FirebaseAuthentication": {
+        "skipNativeAuth": false,
+        "providers": ["google.com", "microsoft.com"]
+      }
+    },
   "cordova": {}
 }

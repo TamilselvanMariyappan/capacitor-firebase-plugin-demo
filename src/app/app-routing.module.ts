@@ -69,9 +69,16 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'firebase-login',
+    loadChildren: () =>
+      import('./modules/firebase-login/firebase-login.module').then(
+        (m) => m.FirebaseLoginPageModule)
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },
+
 ];
 
 @NgModule({
@@ -80,4 +87,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

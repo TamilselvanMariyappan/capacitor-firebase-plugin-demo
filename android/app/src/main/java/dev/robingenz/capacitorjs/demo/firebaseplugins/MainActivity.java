@@ -1,4 +1,4 @@
-package dev.robingenz.capacitorjs.demo.firebaseplugins;
+package net.xxx.xxx;
 
 import com.getcapacitor.BridgeActivity;
 
