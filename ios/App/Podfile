@@ -32,6 +32,9 @@ target 'App' do
   capacitor_pods
   # Add your Pods here
   pod 'CapacitorFirebaseAnalytics/Analytics', :path => '../../node_modules/@capacitor-firebase/analytics'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Analytics', '~> 10.8.0'
+  pod 'CapacitorFirebaseAuthentication/Google', :path => '../../node_modules/@capacitor-firebase/authentication'
 end
 
 
